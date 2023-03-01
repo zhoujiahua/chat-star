@@ -1,0 +1,157 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  overflow: auto;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.iframe,
+.svg-text {
+  width: 100%;
+  height: 100%;
+}
+
+.iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  position: absolute;
+  z-index: 10;
+  top: -70px;
+  left: -30px;
+}
+
+.logo img {
+  width: 400px;
+  height: 300px;
+}
+
+.like-box {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  bottom: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.like-box .like-btn {
+  opacity: 0.6;
+  height: 60px;
+  width: 360px;
+  color: #fff;
+  cursor: pointer;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #ffb800;
+}
+
+.like-box .like-btn i {
+  color: inherit;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.like-box .like-btn span {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.like-box .like-btn:hover {
+  opacity: 0.9;
+  color: #fff;
+  filter: alpha(opacity=90);
+  transition: opacity 1s ease-in;
+}
+
+.footer {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer .copyright {
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+  width: 100%;
+}
+
+.footer .copyright span,
+.footer .copyright a {
+  margin-right: 6px;
+  color: inherit;
+}
+
+.footer .copyright a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    position: absolute;
+    z-index: 10;
+    top: -30px;
+    left: -10px;
+  }
+
+  .logo img {
+    width: 220px;
+    height: 160px;
+  }
+
+  .like-box {
+    bottom: 180px;
+  }
+
+  .like-box .like-btn {
+    opacity: 0.6;
+    height: 60px;
+    width: 280px;
+    color: #fff;
+    cursor: pointer;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ffb800;
+  }
+
+  .like-box .like-btn i {
+    color: inherit;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .like-box .like-btn span {
+    font-weight: inherit;
+    font-size: inherit;
+    color: inherit;
+  }
+
+  .like-box .like-btn:hover {
+    opacity: 0.9;
+    color: #fff;
+    filter: alpha(opacity=90);
+    transition: opacity 1s ease-in;
+  }
+}
